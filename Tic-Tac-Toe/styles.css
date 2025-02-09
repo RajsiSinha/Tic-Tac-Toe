@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6aa8c1, #cf80b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .game {
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: #b9b9d3;
+    color: #0b0303;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+  }
+  
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+   
+  p{
+    font-size: 1.2rem;
+    
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff5678;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ff344c;
+  }
+  
